@@ -7,7 +7,7 @@
     <title> Bloqueur de Pub </title>
     <link rel="stylesheet" type="text/css" href="../style.css" />
 
-    <script src="./jquery/jquery.js"></script>
+    <script src="../jquery/jquery.js"></script>
 </head>
 
 <body>
