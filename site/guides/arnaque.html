@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title> Reconnaître les arnaques </title>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <script src="arn.js"></script>
+</head>
+
+<body>
+    <!-- En tête -->
+    <header>
+        <h1 id="titre_page"> Reconnaître les Arnaques </h1>
+    </header>
+
+    <!-- Menu de navigation -->
+    <nav>
+        <menu id="menu">
+            <li class="lien_menu"> <a class="affichage_lien_menu" href="../index.html">Accueil</a> </li>
+        </menu>
+    </nav>
+
+    <div id="corps" class=pc>
+
+        <!-- menu de navigation latéral -->
+        <aside>
+            <nav>
+                <menu id="menu_lat" class="portable">
+                    <li class="lien_menu_lat"> <a class="affichage_lien_menu_lat" href="guides/block_pub.php">Bloquer
+                            les
+                            publicités</a> </li>
+                </menu>
+            </nav>
+        </aside>
+
+        <!-- corps de la page -->
+        <section class="portable">
+            <h4>
+                Détecter le hammeçonnage dans chaque cas :
+            </h4>
+            <center>
+            <div>
+                <p id="statement"></p>
+                <p id="description"></p>
+            <div class="row">
+            <div class="column">
+                <img src="Jigsaw.png" style="width:100%" onclick="javascript:answer(true)" />
+            </div>
+            <div class="column">
+                <img src="Jigsaw_modifié.png" style="width:100%" onclick="javascript:answer(false)"/>
+            </div>
+            </div>
+
+            <div class="row">
+            <div class="column">
+                <img src="dropbox.png" style="width:100%" onclick="javascript:answer(true)" />
+            </div>
+            <div class="column">
+                <img src="dropboxfake.png" style="width:100%" onclick="javascript:answer(false)"/>
+            </div>
+            </div>
+
+            <div class="row">
+            <div class="column">
+                <img src="bnp.png" style="width:100%" onclick="javascript:answer(true)" />
+            </div>
+            <div class="column">
+                <img src="bnpfake.png" style="width:100%" onclick="javascript:answer(false)"/>
+            </div>
+            </div>
+                
+                <div id="overview">
+                  <button id="task0" onclick="javascript:selectTask(0)">1</button>
+                  <button id="task1" onclick="javascript:selectTask(1)">2</button>
+                  <button id="task2" onclick="javascript:selectTask(2)">3</button>
+                </div>
+            </center>
+        </div>
+                        
+        </section>
+
+
+    </div>
+    
+    <!-- fin div corps (agencement horizontal) -->
+
+    <!-- bas de la page -->
+    <footer>
+        <p>
+            Site par Lilian.
+        </p>
+    </footer>
+</body>
+
+</html>
