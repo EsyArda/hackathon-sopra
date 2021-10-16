@@ -6,6 +6,8 @@
     <meta charset="utf-8" />
     <title> Guides sécurité </title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script src="http://code.jquery.com/jquery.min.js"></script>
 </head>
 
 <body>
@@ -23,16 +25,17 @@
 
     <div id="corps" class=pc>
 
-        <!-- menu de navigation latéral -->
-        <aside>
-            <nav>
-                <menu id="menu_lat" class="portable">
-                    <li class="lien_menu_lat"> <a class="affichage_lien_menu_lat" href="guides/ad-blocker.html">Bloquer
-                            les
-                            publicités</a> </li>
-                </menu>
-            </nav>
-        </aside>
+        <!--Navigation bar-->
+        <div id="nav-placeholder">
+
+        </div>
+
+        <script>
+            $(function () {
+                $("#nav-placeholder").load("nav.html");
+            });
+        </script>
+        <!--end of Navigation bar-->
 
         <!-- corps de la page -->
         <section class="portable">
@@ -40,7 +43,7 @@
                 Apprenez à naviguer sereinement en ligne grâce à nos guides simples et pratiques.
             </p>
             <p>
-                Pour commencer, cuiquez sur un guide du menu.
+                Pour commencer, cliquez sur un guide du menu.
             </p>
         </section>
 
@@ -54,6 +57,8 @@
             Site par Lilian.
         </p>
     </footer>
-</body>
 
-</html>
+
+    <script </body>
+
+</html >
