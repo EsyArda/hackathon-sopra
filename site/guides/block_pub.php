@@ -6,6 +6,8 @@
     <meta charset="utf-8" />
     <title> Bloqueur de Pub </title>
     <link rel="stylesheet" type="text/css" href="../style.css" />
+
+    <script src="../jquery/jquery.js"></script>
 </head>
 
 <body>
@@ -17,22 +19,23 @@
     <!-- Menu de navigation -->
     <nav>
         <menu id="menu">
-            <li class="lien_menu"> <a class="affichage_lien_menu" href="index.html">Accueil</a> </li>
+            <li class="lien_menu"> <a class="affichage_lien_menu" href="../index.html">Accueil</a> </li>
         </menu>
     </nav>
 
     <div id="corps" class=pc>
 
-        <!-- menu de navigation latéral -->
-        <aside>
-            <nav>
-                <menu id="menu_lat" class="portable">
-                    <li class="lien_menu_lat"> <a class="affichage_lien_menu_lat" href="guides/ad-blocker.html">Bloquer
-                            les
-                            publicités</a> </li>
-                </menu>
-            </nav>
-        </aside>
+        <!--Navigation bar-->
+        <div id="nav-placeholder">
+
+        </div>
+
+        <script>
+            $(function () {
+                $("#nav-placeholder").load("./nav.html");
+            });
+        </script>
+        <!--end of Navigation bar-->
 
         <!-- corps de la page -->
         <section class="portable">
@@ -74,11 +77,16 @@
     <!-- fin div corps (agencement horizontal) -->
 
     <!-- bas de la page -->
-    <footer>
-        <p>
-            Site par Lilian.
-        </p>
-    </footer>
+    <div id="footer-placeholder">
+
+    </div>
+
+    <script>
+        $(function () {
+            $("#footer-placeholder").load("../footer.html");
+        });
+    </script>
+    <!-- Fin bas de page-->
 </body>
 
 </html>
