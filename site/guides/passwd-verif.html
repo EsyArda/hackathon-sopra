@@ -6,14 +6,13 @@
     <meta charset="utf-8" />
     <title> Guides sécurité </title>
     <link rel="stylesheet" type="text/css" href="../style.css" />
-
     <script src="../scripts/jquery-1.2.min.js"></script>
 </head>
 
 <body>
     <!-- En tête -->
     <header>
-        <h1 id="titre_page"> Guides sécurité </h1>
+        <h1 id="titre_page">Sécuriser son mot de passe</h1>
     </header>
 
     <!-- Menu de navigation -->
@@ -42,22 +41,26 @@
         <section class="portable">
             <h2>Sécuriser ses mots de passe</h2>
 
-            <h3>Pourquoi avoir des mots de passe compliqués ?</h3>
             <p>
-                <ul>
-                    <li>Difficile : social engineering</li>
-                    <li>Long : attaques dictionnaire, brute force</li>
-                    <li>Différent pour chaque site : si un des sites a une fuite</li>
-                </ul>
+                Vérificateur de mots de passe.
             </p>
 
-            <h3>Comment satisfaire toutes ces conditions ?</h3>
-            <p>
-                <ul>
-                    <li>Enregistez les mots de passe sur votre navigateur</li>
-                    <li>Quand vous créez un mot de passe, générez le aléatoirement</li>
-                </ul>
-            </p>
+            <!-- Validation mot de passe -->
+            <div class="container">
+                <label for="psw">Mot de passe :</label>
+                <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Devrait contenir au moins 8 caractères, une minuscule, une majuscule et un nombre">
+            </div>
+
+            <div id="message">
+                <h3>Le mot de passe devrait contenir :</h3>
+                <p id="letter" class="invalid">Une lettre <b>minuscule</b></p>
+                <p id="capital" class="invalid">Une lettre <b>majuscule</b></p>
+                <p id="number" class="invalid">Un <b>nombre</b></p>
+                <p id="length" class="invalid">Au minimum <b>8 caractères</b></p>
+            </div>
+            <script src="../scripts/passwd-check.js"></script>
+
         </section>
 
 
