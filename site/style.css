@@ -463,21 +463,9 @@ input[type=submit] {
     color: rgb(120, 255, 120);
 }
 
-.valid:before {
-    position: relative;
-    left: -35px;
-    content: "&#10004;";
-}
-
 /* Add a red text color and an "x" icon when the requirements are wrong */
 .invalid {
     color: rgb(250, 100, 100);
-}
-
-.invalid:before {
-    position: relative;
-    left: -35px;
-    content: "&#10006;";
 }
 
 /* Label */
