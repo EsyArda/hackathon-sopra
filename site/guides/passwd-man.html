@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8" />
     <title> Guides sécurité </title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
 
     <script src="http://code.jquery.com/jquery.min.js"></script>
 </head>
@@ -19,7 +19,7 @@
     <!-- Menu de navigation -->
     <nav>
         <menu id="menu">
-            <li class="lien_menu"> <a class="affichage_lien_menu" href="index.html">Accueil</a> </li>
+            <li class="lien_menu"> <a class="affichage_lien_menu" href="../index.html">Accueil</a> </li>
         </menu>
     </nav>
 
@@ -32,18 +32,31 @@
 
         <script>
             $(function () {
-                $("#nav-placeholder").load("nav.html");
+                $("#nav-placeholder").load("./nav.html");
             });
         </script>
         <!--end of Navigation bar-->
 
+
         <!-- corps de la page -->
         <section class="portable">
+            <h2>Sécuriser ses mots de passe</h2>
+
+            <h3>Pourquoi avoir des mots de passe compliqués ?</h3>
             <p>
-                Apprenez à naviguer sereinement en ligne grâce à nos guides simples et pratiques.
+                <ul>
+                    <li>Difficile : social engineering</li>
+                    <li>Long : attaques dictionnaire, brute force</li>
+                    <li>Différent pour chaque site : si un des sites a une fuite</li>
+                </ul>
             </p>
+
+            <h3>Comment satisfaire toutes ces conditions ?</h3>
             <p>
-                Pour commencer, cliquez sur un guide du menu.
+                <ul>
+                    <li>Enregistez les mots de passe sur votre navigateur</li>
+                    <li>Quand vous créez un mot de passe, générez le aléatoirement</li>
+                </ul>
             </p>
         </section>
 
@@ -58,12 +71,12 @@
 
     <script>
         $(function () {
-            $("#footer-placeholder").load("footer.html");
+            $("#footer-placeholder").load("../footer.html");
         });
     </script>
     <!-- Fin bas de page-->
 
 
-    </body>
+</body>
 
-</html >
+</html>
