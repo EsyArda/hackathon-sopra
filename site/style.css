@@ -460,12 +460,12 @@ input[type=submit] {
 
 /* Add a green text color and a checkmark when the requirements are right */
 .valid {
-    color: rgb(120, 255, 120);
+    color: rgb(0, 200, 0);
 }
 
 /* Add a red text color and an "x" icon when the requirements are wrong */
 .invalid {
-    color: rgb(250, 100, 100);
+    color: rgb(200, 0, 0);
 }
 
 /* Label */
