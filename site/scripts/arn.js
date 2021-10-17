@@ -3,20 +3,20 @@
 var currentTask = 0;
 var tasks = [
   {
-    statement:" ",
-    description: "Un mail de Luke Jhonson ?",
+    statement:"Il faut bien se méfier de l'URL de chaque lien avant de cliquer!",
+    description: "",
     correctAnswer: true,
     answer:null
   },
   {
-    statement:" ",
-    description: "Dropbox font du fishing ?",
+    statement:"Il faut bien se méfier de l'URL de chaque lien avant de cliquer! ",
+    description: "",
     correctAnswer: false,
     answer:null
   },
   {
-    statement:"J'aime ma banque !",
-    description: "J'ai confiance en ma banque",
+    statement:"Parfois les scammers envoient des mails avec une adresse similaires à ceux des grandes entreprises. Il faut bien relire l'adresse mail du destinataire a chaque fois qu'on reçoit un mail",
+    description: "L'URL une autre fois ...",
     correctAnswer: false,
     answer:null
   }
