@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZenNet</title>
     <link rel="stylesheet" type="text/css" href="../style.css" />
-
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"/>
     <script src="../scripts/jquery-1.2.min.js"></script>
 </head>
 
