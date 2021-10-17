@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title> Bloqueur de Pub </title>
+    <title>ZenNet</title>
     <link rel="stylesheet" type="text/css" href="../style.css" />
 
     <script src="../scripts/jquery-1.2.min.js"></script>
@@ -13,7 +13,7 @@
 <body>
     <!-- En tête -->
     <header>
-        <h1 id="titre_page"> Bloqueur de Pub </h1>
+        <h1 id="titre_page">ZenNet</h1>
     </header>
 
     <!-- Menu de navigation -->
@@ -39,6 +39,7 @@
 
         <!-- corps de la page -->
         <section class="portable">
+            <h3>Comment bloquer les publicitées sur votre navigateur ?</h3>
             <center>
             <h3> 
                 <?php
