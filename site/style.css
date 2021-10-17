@@ -329,6 +329,20 @@ img {
     margin: 20px;
 }
 
+.logo-titre {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-simple {
+    width: 140px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /******************************************************************************/
 
@@ -488,7 +502,7 @@ label {
     display: table;
   }
 
-  img:hover{
+  .bigger:hover{
     -ms-transform: scale(1.3); /* IE 9 */
     -webkit-transform: scale(1.3); /* Safari 3-8 */
     transform: scale(1.3);
