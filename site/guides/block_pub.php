@@ -88,14 +88,6 @@
                 <li>L’icône en forme de pouce vert  indique que votre bloqueur de pub à bien été activé</li>
                 <img src="../img/Tuto adblock validé.gif" alt="Popup adblock activé">
             </ol>
-            <p>
-                Paragraphe à remplir pour les bloqueurs de pub
-            </p>
-
-            
-
-
-            
         </section>
 
 
