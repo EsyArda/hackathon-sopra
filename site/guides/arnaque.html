@@ -6,7 +6,8 @@
     <meta charset="utf-8" />
     <title> Reconnaître les arnaques </title>
     <link rel="stylesheet" type="text/css" href="../style.css" />
-    <script src="arn.js"></script>
+    <script src="../scripts/arn.js"></script>
+    <script src="../scripts/jquery-1.2.min.js"></script>
 </head>
 
 <body>
@@ -24,16 +25,17 @@
 
     <div id="corps" class=pc>
 
-        <!-- menu de navigation latéral -->
-        <aside>
-            <nav>
-                <menu id="menu_lat" class="portable">
-                    <li class="lien_menu_lat"> <a class="affichage_lien_menu_lat" href="guides/block_pub.php">Bloquer
-                            les
-                            publicités</a> </li>
-                </menu>
-            </nav>
-        </aside>
+        <!--Navigation bar-->
+        <div id="nav-placeholder">
+
+        </div>
+
+        <script>
+            $(function () {
+                $("#nav-placeholder").load("./nav.html");
+            });
+        </script>
+        <!--end of Navigation bar-->
 
         <!-- corps de la page -->
         <section class="portable">
@@ -46,28 +48,28 @@
                 <p id="description"></p>
             <div class="row">
             <div class="column">
-                <img src="Jigsaw.png" style="width:100%" onclick="javascript:answer(true)" />
+                <img src="../img/Jigsaw.png" style="width:100%" onclick="javascript:answer(true)" />
             </div>
             <div class="column">
-                <img src="Jigsaw_modifié.png" style="width:100%" onclick="javascript:answer(false)"/>
+                <img src="../img/Jigsaw_modifié.png" style="width:100%" onclick="javascript:answer(false)"/>
             </div>
             </div>
 
             <div class="row">
             <div class="column">
-                <img src="dropbox.png" style="width:100%" onclick="javascript:answer(true)" />
+                <img src="../img/dropbox.png" style="width:100%" onclick="javascript:answer(true)" />
             </div>
             <div class="column">
-                <img src="dropboxfake.png" style="width:100%" onclick="javascript:answer(false)"/>
+                <img src="../img/dropboxfake.png" style="width:100%" onclick="javascript:answer(false)"/>
             </div>
             </div>
 
             <div class="row">
             <div class="column">
-                <img src="bnp.png" style="width:100%" onclick="javascript:answer(true)" />
+                <img src="../img/bnp.png" style="width:100%" onclick="javascript:answer(true)" />
             </div>
             <div class="column">
-                <img src="bnpfake.png" style="width:100%" onclick="javascript:answer(false)"/>
+                <img src="../img/bnpfake.png" style="width:100%" onclick="javascript:answer(false)"/>
             </div>
             </div>
                 
@@ -87,11 +89,16 @@
     <!-- fin div corps (agencement horizontal) -->
 
     <!-- bas de la page -->
-    <footer>
-        <p>
-            Site par Lilian.
-        </p>
-    </footer>
+    <div id="footer-placeholder">
+
+    </div>
+
+    <script>
+        $(function () {
+            $("#footer-placeholder").load("../footer.html");
+        });
+    </script>
+    <!-- Fin bas de page-->
 </body>
 
 </html>
